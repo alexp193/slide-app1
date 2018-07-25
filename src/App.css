@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+  width:100%;
+  height: 100%;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App .container{
+  overflow: hidden;
+  margin: 0 auto;
+  width: 54%;
+  height: 294px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.App .container .header>.first-title{
+  font-size: 16px;
+}
+
+.App .container .header>.second-title{
+  font-size: 22px;
+}
+
+.App .container .header>.text{
+  font-size: 11px;
+}
+
+.container .content{
+  display: flex;
+  justify-content: center;
+  padding-right: 18%;
+}
+
+.content .item img{
+  width:130px;
+
+}
+.item{
+  padding: 0 3%;
+}
+
+.item .text-container{
+  padding-top: 43px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translate(-50%);
+  z-index: -1;
+}
+
+.item .text-container>.title{
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.item .text-container>.sub-title{
+  font-size: 11px;
+  padding-top: 3px;  
+}
+
+.item .show{
+  display: block;
+}
+.item .hidden{
+  display: none;
+}
+
+.item .grow{
+  transition: all .2s ease-in-out;
+  transform: scale(1.8);
+}
+
+.item .min{
+  transition: all .2s ease-in-out;
+  transform: scale(1);
+}
+
+
+
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 123;
+}
+
+.container>.footer .right, .footer .left{
+  width: 38px;
+  border: 1px solid grey;
+  cursor: pointer
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
